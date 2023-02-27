@@ -254,9 +254,12 @@ a {
           <div class="navbar-menu" id="open-navbar1">
             <ul class="navbar-nav">
               <li><a href="{% url 'home' %}">Home</a></li>
-              
-              <li><a href="{% url 'login' %}">Login</a></li>
-              <li class="active"><a href="{% url 'signup' %}">Signup</a></li>
+              {% if user.is_authenticated %}
+            <li><a href="{% url 'logout' %}">Logout</a></li>
+            {% else %}
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li class="active"><a href="{% url 'signup' %}">Signup</a></li>
+            {% endif %}
             </ul>
           </div>
         </div>
