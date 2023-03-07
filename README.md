@@ -17,19 +17,19 @@ Clone the repository to your local machine using the following command:
 git clone https://github.com/yourusername/lovelink-login-page.git
 ```
 Install the required dependencies using the following command:
-
+```
   pip install -r requirements.txt
-
+```
 Create a new Django project using the following command:
-
+```
   django-admin startproject lovelink_login
-
+```
 Copy the contents of the cloned repository to the newly created project directory.
 
 Run the development server using the following command:
-
+```
   python manage.py runserver
-
+```
 Open your web browser and navigate to http://127.0.0.1:8000/login to view the login page.
 
 
